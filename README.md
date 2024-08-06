@@ -6,6 +6,7 @@
 ```
 -- This export will return id of target
 exports['fc-interact']:addInteract({
+    icon = 'fa-solid fa-box', -- optional (fontawesome.com)
     coords = vector3(0.0, 0.0, 0.0), -- coords or entity
     distance = 1.75,
     options = {
