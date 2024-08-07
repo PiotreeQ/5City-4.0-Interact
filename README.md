@@ -14,6 +14,9 @@ exports['fc-interact']:addInteract({
            label = 'Buy Coffee',
            event = 'fc-interact:BuyCoffee',
            args = 10,
+           type = 'event', -- event / serverEvent / function / command (if function you need to use onSelect function)
+           onSelect = function() -- only use if type = function
+           end,
            job = 'police', -- it can be string, array, object
            canInteract = function() -- optional
                return true
